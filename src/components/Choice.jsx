@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TriangleGameItem from './TriangleGameitem'
 
 import EmptyChoice from './EmptyChoice'
@@ -37,7 +37,7 @@ const Choice = () => {
           <h1 className=' z-20 uppercase text-white xs:text-sm  xs:mt-12 sm:text-2xl'>
             The house picked
           </h1>
-          <div className='flex justify-center'>
+          <div className='relative flex justify-center h-full w-full'>
             <EmptyChoice width='w-52' height='h-52'>
               {
               choice.step > 1 && <TriangleGameItem widthF='w-52' heightF='h-52' width='w-32' height='h-32' name={choice.houseChoice} />
